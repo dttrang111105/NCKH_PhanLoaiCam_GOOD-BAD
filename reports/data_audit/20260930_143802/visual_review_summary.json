@@ -1,0 +1,16 @@
+{
+  "contact_sheet_pairs_reviewed": 60,
+  "confirmed_same_source_variant_pairs": 46,
+  "rejected_visually_different_pairs": 11,
+  "reviewed_uncertain_pairs": 3,
+  "confirmed_evidence_groups": 41,
+  "unique_images_in_confirmed_groups": 87,
+  "unique_confirmed_images_by_split": {
+    "test": 25,
+    "train": 39,
+    "validation": 23
+  },
+  "confirmed_pairs_involving_test": 26,
+  "review_scope": "30 pairs selected as closest/conflicting/boundary candidates plus 30 additional same-class pairs stratified by five original classes and pHash distances 0/2/4",
+  "interpretation_limit": "Manual review confirms only same depicted source image/fruit framing. It does not recover real-world fruit_id, video_id or session_id, and groups are not exhaustive."
+}

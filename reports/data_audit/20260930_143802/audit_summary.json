@@ -1,0 +1,115 @@
+{
+  "started_at": "2026-09-30T14:45:24+0700",
+  "finished_at": "2026-09-30T14:48:13+0700",
+  "duration_seconds": 168.86677190009505,
+  "manifest_rows": 15000,
+  "unique_manifest_paths": 15000,
+  "actual_image_files_under_dataset_root": 15000,
+  "missing_manifest_files": 0,
+  "extra_image_files_not_in_manifest": 0,
+  "decode_failures": 0,
+  "split_counts": {
+    "test": 2250,
+    "train": 10500,
+    "validation": 2250
+  },
+  "class_counts": {
+    "blackspotted_orange": 3000,
+    "cankered_orange": 3000,
+    "fresh_orange": 3000,
+    "green_orange": 3000,
+    "rotten_orange": 3000
+  },
+  "extension_counts": {
+    ".jpg": 15000
+  },
+  "resolution_counts": {
+    "224x224": 15000
+  },
+  "jpeg_exif_segment_counts": {
+    "False": 15000
+  },
+  "exact_duplicate_summary": {
+    "FILE_BYTES": {
+      "groups": 0,
+      "images_in_groups": 0,
+      "excess_images": 0,
+      "cross_split_groups": 0,
+      "cross_label_groups": 0
+    },
+    "DECODED_RGB_PIXELS": {
+      "groups": 0,
+      "images_in_groups": 0,
+      "excess_images": 0,
+      "cross_split_groups": 0,
+      "cross_label_groups": 0
+    }
+  },
+  "near_duplicate_summary": {
+    "candidate_pairs": 35411,
+    "radius": 6,
+    "max_candidates": 250000,
+    "truncated": false,
+    "distance_counts": {
+      "0": 151,
+      "2": 1555,
+      "4": 7282,
+      "6": 26423
+    },
+    "split_pair_counts": {
+      "test|train": 16230,
+      "test|validation": 3615,
+      "train|validation": 15566
+    },
+    "label_conflict_pairs": 6526,
+    "contact_sheet_pair_ids": [
+      "NEAR_0000002",
+      "NEAR_0000003",
+      "NEAR_0000004",
+      "NEAR_0000005",
+      "NEAR_0000006",
+      "NEAR_0000007",
+      "NEAR_0000008",
+      "NEAR_0000012",
+      "NEAR_0000014",
+      "NEAR_0000015",
+      "NEAR_0000143",
+      "NEAR_0000236",
+      "NEAR_0000557",
+      "NEAR_0000681",
+      "NEAR_0000709",
+      "NEAR_0000733",
+      "NEAR_0000821",
+      "NEAR_0000848",
+      "NEAR_0000888",
+      "NEAR_0000924",
+      "NEAR_0000937",
+      "NEAR_0000949",
+      "NEAR_0007783",
+      "NEAR_0010772",
+      "NEAR_0010948",
+      "NEAR_0010960",
+      "NEAR_0011016",
+      "NEAR_0011451",
+      "NEAR_0011455",
+      "NEAR_0011456"
+    ]
+  },
+  "missing_paths": [],
+  "extra_paths": [],
+  "contact_sheets": [
+    "near_pairs_001.jpg",
+    "near_pairs_002.jpg",
+    "near_pairs_003.jpg",
+    "near_pairs_004.jpg",
+    "near_pairs_005.jpg",
+    "near_pairs_006.jpg",
+    "near_pairs_007.jpg",
+    "near_pairs_008.jpg",
+    "class_sample_blackspotted_orange.jpg",
+    "class_sample_cankered_orange.jpg",
+    "class_sample_fresh_orange.jpg",
+    "class_sample_green_orange.jpg",
+    "class_sample_rotten_orange.jpg"
+  ]
+}

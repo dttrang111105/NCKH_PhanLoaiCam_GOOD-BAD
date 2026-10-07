@@ -1,0 +1,14 @@
+{
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "opencv": "4.10.0",
+  "numpy": "1.26.4",
+  "file_exact": "SHA-256 of complete file bytes",
+  "pixel_exact": "SHA-256 of ASCII shape/dtype/colorspace prefix plus contiguous uint8 RGB pixels; decoded by cv2.imdecode(IMREAD_COLOR), which applies EXIF orientation by default",
+  "near_duplicate": "64-bit pHash: RGB->gray, INTER_AREA resize 32x32, OpenCV DCT, top-left 8x8, bits above median of 63 AC coefficients; BK-tree Hamming search; cross-split only; decoded-pixel exact matches excluded",
+  "phash_radius": 6,
+  "phash_similarity_definition": "1 - HammingDistance/64",
+  "near_candidate_limit": 250000,
+  "class_sample": "Python random.Random(seed=42), 6 train + 6 validation per original class",
+  "important_limit": "pHash candidates are not proof of duplicate or fruit identity; pHash is not fully robust to arbitrary crop, rotation, occlusion or strong photometric transforms"
+}

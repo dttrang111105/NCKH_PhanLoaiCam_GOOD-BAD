@@ -1,0 +1,63 @@
+{
+  "scope": [
+    "E:\\dataset",
+    "E:\\orange_project\\training\\outputs\\splits\\dataset_manifest.csv"
+  ],
+  "files_scanned": 15000,
+  "duration_seconds": 45.06826090021059,
+  "jpeg_valid": 15000,
+  "jfif_present": 15000,
+  "exif_present": 0,
+  "iptc_present": 0,
+  "xmp_present": 0,
+  "extended_xmp_present": 0,
+  "icc_profile_present": 0,
+  "photoshop_app13_present": 0,
+  "adobe_app14_present": 0,
+  "comment_present": 0,
+  "camera_make_present": 0,
+  "camera_model_present": 0,
+  "capture_time_present": 0,
+  "gps_present": 0,
+  "orientation_present": 0,
+  "software_present": 0,
+  "zone_identifier_present": 15000,
+  "zone_ids": {
+    "3": 15000
+  },
+  "zone_referrer_urls": {
+    "C:\\Users\\ADMIN\\Downloads\\OrangeClassificationDataset.zip": 15000
+  },
+  "zone_host_urls": {
+    "": 15000
+  },
+  "marker_signatures": {
+    "FFE0-FFDB-FFDB-FFC0-FFC4-FFC4-FFC4-FFC4-FFDA": 15000
+  },
+  "jfif_versions": {
+    "1.01": 15000
+  },
+  "jfif_density": {
+    "unit=0,x=1,y=1": 15000
+  },
+  "creation_time_min": "2025-04-27T06:43:10+07:00",
+  "creation_time_max": "2025-04-27T06:43:30+07:00",
+  "last_write_time_min": "2026-07-29T15:41:47+07:00",
+  "last_write_time_max": "2026-07-29T15:44:39+07:00",
+  "creation_date_counts": {
+    "2025-04-27": 15000
+  },
+  "last_write_date_counts": {
+    "2026-07-29": 15000
+  },
+  "resolution_counts": {
+    "224x224": 15000
+  },
+  "class_counts": {
+    "fresh_orange": 3000,
+    "blackspotted_orange": 3000,
+    "cankered_orange": 3000,
+    "rotten_orange": 3000,
+    "green_orange": 3000
+  }
+}

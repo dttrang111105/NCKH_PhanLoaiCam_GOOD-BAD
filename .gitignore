@@ -1,0 +1,27 @@
+# Python virtual environments
+venv/
+.venv/
+**/.venv/
+
+# Python caches and test/tool caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local secrets and environment overrides
+.env
+.env.*
+!.env.example
+
+# Generated runtime captures
+pilot_capture/data/
+test_result.jpg
+

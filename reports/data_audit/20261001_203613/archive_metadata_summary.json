@@ -1,0 +1,62 @@
+{
+  "audit_scope": {
+    "archive": "C:\\Users\\ADMIN\\Downloads\\OrangeClassificationDataset.zip",
+    "dataset": "E:\\dataset"
+  },
+  "read_only_method": "ZIP members read with zipfile into memory; no extraction",
+  "archive": {
+    "exists": true,
+    "readable": true,
+    "size_bytes": 112489867,
+    "creation_time": "2026-07-26T17:01:07+07:00",
+    "last_write_time": "2026-07-26T17:01:09+07:00",
+    "sha256": "03d43104a0c6eda6681c23415bec8fe404ff6c919d44de35b247bb9b72105251",
+    "bad_crc_member": null
+  },
+  "members": {
+    "total_entries": 15000,
+    "file_entries": 15000,
+    "extension_counts": {
+      ".jpg": 15000
+    },
+    "total_uncompressed_bytes": 111642109,
+    "total_compressed_bytes": 109357845,
+    "encrypted_count": 0,
+    "unsafe_path_count": 0,
+    "duplicate_name_count": 0
+  },
+  "image_metadata": {
+    "jpeg_valid": 15000,
+    "resolution_counts": {
+      "224x224": 15000
+    },
+    "metadata_presence_counts": {},
+    "marker_signature_counts": {
+      "FFE0-FFDB-FFDB-FFC0-FFC4-FFC4-FFC4-FFC4-FFDA": 15000
+    }
+  },
+  "comparison": {
+    "dataset_file_count": 15000,
+    "dataset_unique_sha256_count": 15000,
+    "dataset_hashes_with_one_file": 15000,
+    "archive_match_status_counts": {
+      "EXACT_BYTE_MATCH": 15000
+    },
+    "confirmed_mapping_rows": 15000,
+    "unmatched_dataset_count": 0,
+    "unmatched_dataset_paths": [],
+    "perceptual_hash_run": false,
+    "perceptual_hash_reason": "All archive members obtained exact SHA-256 matches; near-match search was unnecessary"
+  },
+  "provenance_fields_recovered": {
+    "fruit_id": false,
+    "session_id": false,
+    "capture_time": false,
+    "camera_id": false,
+    "source_member_path": true,
+    "archive_sha256": true,
+    "member_sha256": true
+  },
+  "generated_at": "2026-10-01T20:41:51+07:00",
+  "duration_seconds": 231.339
+}
