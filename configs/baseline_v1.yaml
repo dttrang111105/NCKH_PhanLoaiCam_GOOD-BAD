@@ -1,0 +1,65 @@
+schema_version: NCKH_BACKBONE_BENCHMARK_V1
+profile: baseline_v1
+status: DRAFT_NOT_FROZEN
+approval_required: true
+
+project:
+  seed: 42
+  output_root: outputs_v1
+  run_id_prefix: mobilenetv3_small_baseline_v1
+
+data:
+  dataset_root_env: DATASET_ROOT
+  image_size: 224
+  batch_size: 16
+  manifest_path: shared_data/manifest_binary_v1_portable.csv
+  provenance_path: shared_data/manifest_binary_v1_portable_provenance.json
+  expected_source_manifest_sha256: f7bd8fd28c436e7e23f70e2ad5df27318d28ce528572e92ba7f2cea32b8dfa68
+  expected_portable_manifest_sha256: null
+  expected_counts:
+    DEV_TRAIN: {GOOD: 1963, BAD: 5888, total: 7851}
+    DEV_VALIDATION: {GOOD: 517, BAD: 1542, total: 2059}
+    DEV_HOLDOUT: {GOOD: 520, BAD: 1570, total: 2090}
+  label_mapping: {GOOD: 0, BAD: 1}
+  excluded_original_classes: [green_orange]
+
+model:
+  constructor: tf.keras.applications.MobileNetV3Small
+  weights: imagenet
+  include_top: false
+  include_preprocessing: true
+  dropout: 0.20
+  output: sigmoid_p_BAD
+  mixed_precision: false
+
+augmentation:
+  horizontal_flip: true
+  rotation_factor: 0.04
+  zoom_factor: 0.10
+  translation_factor: 0.05
+  contrast_factor: 0.10
+  train_only: true
+
+training:
+  optimizer: Adam
+  phase1: {max_epochs: 10, learning_rate: 0.001, early_stopping_patience: 3}
+  phase2: {max_epochs: 20, learning_rate: 0.0001, early_stopping_patience: 5}
+  checkpoint_monitor: val_loss
+  checkpoint_mode: min
+  restore_best_weights: false
+  reduce_lr_on_plateau: false
+  full_backbone_unfreeze_phase2: true
+  freeze_batch_normalization_phase2: true
+
+evaluation:
+  primary_threshold: 0.50
+  threshold_min: 0.01
+  threshold_max: 0.99
+  threshold_step: 0.01
+  scientific_status: LEGACY_DEV_INTERNAL_NOT_INDEPENDENT
+  holdout_access: FORBIDDEN
+
+contract:
+  reference_commit: addaee99f8ba410ac7efd1e6abce34c042561c75
+  declared_frozen_protocol_sha256: 6cedb8cfed97c07fc19aab4e44d3148b0b931b5bc7ac034505ec3428138b88d0
+  verification_status: BLOCKED_MISSING_APPROVED_MANIFEST_AND_PROTOCOL_FILE

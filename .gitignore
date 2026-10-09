@@ -25,3 +25,14 @@ Thumbs.db
 pilot_capture/data/
 test_result.jpg
 
+# Binary V1 generated/private material (legacy tracked artifacts stay tracked)
+outputs_v1/
+approvals/
+approval*.json
+dataset/
+datasets/
+OrangeClassificationDataset/
+originals/
+*.zip
+shared_data/manifest_binary_v1_portable.csv
+shared_data/manifest_binary_v1_portable_provenance.json
